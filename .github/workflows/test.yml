@@ -13,3 +13,6 @@ jobs:
         with:
           LOCUSTFILE: "locustfile.py"
           URL:  "https://google.com"
+          USERS: "5"
+          RATE: "5"
+          RUNTIME: "10s"
