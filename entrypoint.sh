@@ -13,7 +13,8 @@ else
     file="/github/workspace/$INPUT_LOCUSTFILE"
 fi
 
-echo locustfile variable = $file
+echo locustfile variable file = $file
 locust --version
+ls /github/workspace/
 
-sh -c "locust -f $file --headless -u 5 -r 5 --run-time 10s -H $INPUT_URL"
+locust -f $file --headless -u 5 -r 5 --run-time 10s -H $INPUT_URL
