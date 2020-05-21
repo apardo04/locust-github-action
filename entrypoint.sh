@@ -2,10 +2,12 @@
 
 # `$*` expands the `args` supplied in an `array` individually 
 # or splits `args` in a string separated by whitespace.
+
 echo locustfile variable from actions = $INPUT_LOCUSTFILE
 echo INPUT_URL = $INPUT_URL
 
-if [ -z ${INPUT_LOCUSTFILE} ]; then
+if [ -z ${INPUT_LOCUSTFILE} ]
+then
     file = "/locustfile.py"
 else
     file = "/github/workspaces/$INPUT_LOCUSTFILE"

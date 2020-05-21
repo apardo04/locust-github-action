@@ -1,4 +1,4 @@
-FROM python:3.6.10-alpine3.11
+FROM python:latest
 
 RUN pip install locust==1.0.1
 
