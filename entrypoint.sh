@@ -9,4 +9,4 @@ else
     file= "/github/workspaces/$locustfile"
 fi
 
-sh -c "-f $file --headless -u 5 -r 5 --run-time 10s -H $URL"
+sh -c "locust -f $file --headless -u 5 -r 5 --run-time 10s -H $URL"
