@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.8-slim-buster
 
 RUN pip install locust==1.0.1
 
