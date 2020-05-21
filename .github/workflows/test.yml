@@ -1,0 +1,13 @@
+name: Test Locust Load Test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Load Test
+        uses: apardo04/locust-github-action@master
+        with:
+          files: "locustfile.py"
+          URL:  "https://adrianpardo.dev"
