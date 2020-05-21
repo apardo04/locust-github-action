@@ -1,6 +1,4 @@
 from locust import HttpUser, TaskSet, task, between
-import json
-
 
 class UserTasks(TaskSet):
 	@task(1)

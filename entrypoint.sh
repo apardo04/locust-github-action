@@ -17,4 +17,4 @@ echo locustfile variable file = $file
 locust --version
 ls /github/workspace/
 
-locust -f $file --headless -u 5 -r 5 --run-time 10s -H $INPUT_URL
+locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL
