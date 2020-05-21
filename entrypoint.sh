@@ -5,7 +5,7 @@
 echo locustfile variable from actions = $INPUT_LOCUSTFILE
 echo INPUT_URL = $INPUT_URL
 
-if [ -z ${locustfile} ]; then
+if [ -z ${INPUT_LOCUSTFILE} ]; then
     file = "/locustfile.py"
 else
     file = "/github/workspaces/$INPUT_LOCUSTFILE"
