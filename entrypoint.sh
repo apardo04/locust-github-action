@@ -10,7 +10,7 @@ if [ -z "$INPUT_LOCUSTFILE" ]
 then
     file="/locustfile.py"
 else
-    file="/github/workspaces/$INPUT_LOCUSTFILE"
+    file="/github/workspace/$INPUT_LOCUSTFILE"
 fi
 
 echo locustfile variable = $file
