@@ -6,7 +6,7 @@
 echo locustfile variable from actions = $INPUT_LOCUSTFILE
 echo INPUT_URL = $INPUT_URL
 
-if [ -v "$INPUT_LOCUSTFILE" ]
+if [ -z "$INPUT_LOCUSTFILE" ]
 then
     file="/locustfile.py"
 else
