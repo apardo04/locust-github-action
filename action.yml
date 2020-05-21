@@ -1,0 +1,20 @@
+name: 'Locust Load Test'
+author: 'Adrian Pardo'
+description: 'Load Test an application using Locust'
+inputs:
+  locustfile:
+    description: 'The locustfile you want to use to load test. If no file is provided, a simple load test will be done on the landing page of the provided URL.'
+    required: false
+  URL:
+    description: 'URL to the site you want to load test'
+    required: true
+runs:
+  using: 'docker'
+  #image: 'docker://locustio/locust:master'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.locustfile }}
+    - ${{ inputs.URL }}
+branding:
+  icon: 'link'
+  color: 'green'
