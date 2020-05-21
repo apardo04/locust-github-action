@@ -1,5 +1,5 @@
-# URL Checker
-A GitHub action to load testing using Locust
+# Load Testing with Locust
+A GitHub action for load testing using Locust
 
 ### Sample Workflow
 ```yml
@@ -29,5 +29,3 @@ jobs:
  - `USERS`: Number of Users to spawn. Defaults to 5.
  - `RATE`: Specify the hatch rate (number of users to spawn per second). Defaults to 5.
  - `RUNTIME`: Specify the run time for a test. Defaults to 10 seconds.
-
-### Sample Output
