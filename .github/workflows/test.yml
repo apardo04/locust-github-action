@@ -9,5 +9,5 @@ jobs:
       - name: Run Load Test
         uses: apardo04/locust-github-action@master
         with:
-          locustfile: "locustfile.py"
+          LOCUSTFILE: "locustfile.py"
           URL:  "https://google.com"

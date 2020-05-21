@@ -6,11 +6,11 @@
 echo locustfile variable from actions = $INPUT_LOCUSTFILE
 echo INPUT_URL = $INPUT_URL
 
-if [ -z ${INPUT_LOCUSTFILE} ]
+if [ -v "$INPUT_LOCUSTFILE" ]
 then
-    file = "/locustfile.py"
+    file="/locustfile.py"
 else
-    file = "/github/workspaces/$INPUT_LOCUSTFILE"
+    file="/github/workspaces/$INPUT_LOCUSTFILE"
 fi
 
 echo locustfile variable = $file
