@@ -1,7 +1,4 @@
 #!/bin/sh
-echo "In entrypoint.sh"
-
-printenv | more
 
 if [ -z "$INPUT_LOCUSTFILE" ]
 then

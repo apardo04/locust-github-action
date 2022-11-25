@@ -12,8 +12,6 @@ jobs:
         run: echo "GITHUB_USERNAME=$(echo ${{ secrets.USERNAME_TEST }})" >> $GITHUB_ENV
       - name: Test
         run: echo ${{ secrets.USERNAME_TEST }}
-      - name: Test2
-        run: echo $GITHUB_USERNAME
       - name: Run Load Test
         uses: apardo04/locust-github-action@master
         with:
