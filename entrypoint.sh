@@ -1,4 +1,5 @@
 #!/bin/sh
+env
 
 if [ -z "$INPUT_LOCUSTFILE" ]
 then
