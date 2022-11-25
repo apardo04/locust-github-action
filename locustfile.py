@@ -1,7 +1,9 @@
 from locust import HttpUser, TaskSet, task, between
 import os
 
-print("username = ", os.environ.get('GITHUB_USERNAME'))
+user = os.environ.get('GITHUB_USERNAME')
+print("GITHUB_USERNAME = ", os.environ.get('GITHUB_USERNAME'))
+print("user = ", user)
 
 class UserTasks(TaskSet):
 	@task(1)
