@@ -14,6 +14,11 @@ if os.getenv('GITHUB_USERNAME'):
 else:
     print('Maybe running locally?')
 
+if (user == "user007"):
+	print("user is 007")
+else:
+	print("user is not 007")
+
 class UserTasks(TaskSet):
 	@task(1)
 	def index(self):
