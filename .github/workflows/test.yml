@@ -12,6 +12,7 @@ jobs:
         uses: apardo04/locust-github-action@master
         with:
           LOCUSTFILE: "locustfile.py"
+          ENTRYPOINT: "entrypoint/entrypoint.sh"
           URL:  "https://google.com"
           USERS: "6"
           RATE: "6"

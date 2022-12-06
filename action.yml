@@ -2,6 +2,9 @@ name: 'Locust Load Test'
 author: 'Adrian Pardo'
 description: 'Load Test an application using Locust'
 inputs:
+  ENTRYPOINT:
+    description: 'Path to a custom entrypoint file. If no file is provided, will use the defalt entrypoint.sh from locust-github-action repo.'
+    required: false
   LOCUSTFILE:
     description: 'The locustfile you want to use to load test. If no file is provided, a simple load test will be done on the landing page of the provided URL.'
     required: false
