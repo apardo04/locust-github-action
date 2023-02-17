@@ -12,6 +12,7 @@ jobs:
         uses: apardo04/locust-github-action@requirements-branch
         with:
           LOCUSTFILE: "locustfile.py"
+          REQUIREMENTS: "requirements.txt"
           URL:  "https://google.com"
           USERS: "6"
           RATE: "6"

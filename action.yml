@@ -6,7 +6,7 @@ inputs:
     description: 'The locustfile you want to use to load test. If no file is provided, a simple load test will be done on the landing page of the provided URL.'
     required: false
   REQUIREMENTS:
-    description: 'TODO'
+    description: 'requirements.txt file you want to use to install 3rd party dependencies. Not required.'
     required: false
   URL:
     description: 'URL to the site you want to load test. This is Required!'
