@@ -1,6 +1,7 @@
 from locust import HttpUser, TaskSet, task, between
 import flask
 
+print("Flask Version:")
 print(flask.__version__)
 
 class UserTasks(TaskSet):

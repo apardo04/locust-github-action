@@ -12,6 +12,7 @@ then
     pip install -r /github/workspace/requirements.txt
     # Remove: this is for testing
     pip show Flask
+    pip show pandas
 fi
 
 locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL
