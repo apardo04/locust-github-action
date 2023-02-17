@@ -17,6 +17,7 @@ jobs:
         uses: apardo04/locust-github-action@master
         with:
           LOCUSTFILE: "locustfile.py"
+          REQUIREMENTS: "requirements.txt"
           URL:  "https://google.com"
           USERS: "5"
           RATE: "5"
@@ -24,8 +25,9 @@ jobs:
 ```
 
 ### Arguments
- - `locustfile`: The locustfile you want to use to load test. If no file is provided, a simple load test will be done on the landing page of the provided URL.
- - `URL`: URL to the site you want to load test. This is Required!
- - `USERS`: Number of Users to spawn. Defaults to 5.
- - `RATE`: Specify the hatch rate (number of users to spawn per second). Defaults to 5.
- - `RUNTIME`: Specify the run time for a test. Defaults to 10 seconds.
+ - `LOCUSTFILE`: The locustfile you want to use to load test. If no file is provided, a simple load test will be done on the landing page of the provided URL.
+ - `REQUIREMENTS`: requirements.txt file you want to use. Not required. 
+ - `URL`: URL to the site you want to load test. This is Required.
+ - `USERS`: Number of Users to spawn. Not required, defaults to 5.
+ - `RATE`: Specify the hatch rate (number of users to spawn per second). Not required, defaults to 5.
+ - `RUNTIME`: Specify the run time for a test. Not required, defaults to 10 seconds.

@@ -1,5 +1,4 @@
 #!/bin/sh
-echo "ayy test echo"
 
 if [ -z "$INPUT_LOCUSTFILE" ]
 then
@@ -8,12 +7,13 @@ else
     file="/github/workspace/$INPUT_LOCUSTFILE"
 fi
 
-if [ -n "$INPUT_REQUIREMENTS" ]
+if [ -z "$INPUT_REQUIREMENTS" ]
 then
-    pip install -r /github/workspace/$INPUT_REQUIREMENTS
-    echo "ayy In the requirements IF"
+    pip install -r requirements.txt
+    echo "ayy In the then requirements IF"
 else
-    echo "ayy No requirement file"
+    pip install -r /github/workspace/$INPUT_REQUIREMENTS
+    echo "ayy in the else requirements IF"
 fi
 
 locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL
