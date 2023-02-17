@@ -1,9 +1,10 @@
 from locust import HttpUser, TaskSet, task, between
 import flask
-import pandas as pd
+import requests
 
-print("Pandas Version:")
-print(pd.__version__)
+response = requests.get("https://www.google.com")
+print("requests status code:")
+print(response.status_code)
 
 print("Flask Version:")
 print(flask.__version__)
