@@ -7,8 +7,14 @@ else
     file="/github/workspace/$INPUT_LOCUSTFILE"
 fi
 
+if [ -e /requirements.txt ]
+then
+    echo "In the requirements IF"
+fi
+
 if [ -e /github/workspace/requirements.txt ]
 then
+    echo "In the github/workspace/requirements IF"
     pip install -r /github/workspace/requirements.txt
     # Remove: this is for testing
     pip show Flask
