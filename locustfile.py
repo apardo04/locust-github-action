@@ -1,5 +1,9 @@
 from locust import HttpUser, TaskSet, task, between
 import flask
+import pandas as pd
+
+print("Pandas Version:")
+print(pd.__version__)
 
 print("Flask Version:")
 print(flask.__version__)
