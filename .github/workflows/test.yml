@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Run Load Test
-        uses: apardo04/locust-github-action@master
+        uses: apardo04/locust-github-action@requirements-test
         with:
           LOCUSTFILE: "locustfile.py"
           URL:  "https://google.com"
