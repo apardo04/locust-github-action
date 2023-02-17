@@ -7,7 +7,7 @@ then
 else
     file="/github/workspace/$INPUT_LOCUSTFILE"
 fi
-
+'''
 if [ -e /requirements.txt ]
 then
     echo "ayy In the requirements IF"
@@ -25,5 +25,5 @@ then
 else
     echo "ayy NOT In the github/workspace/requirements IF"
 fi
-
+'''
 locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL

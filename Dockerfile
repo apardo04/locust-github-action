@@ -1,9 +1,13 @@
 FROM python:3.8.3-buster
 
 RUN pip install locust==1.0.1
+RUN 
 
 COPY locustfile.py /locustfile.py
-COPY requirements.txt /requirements.txt
 COPY entrypoint.sh /entrypoint.sh
+
+COPY requirements.txt /requirements.txt
+RUN pip install -r requirements.txt
+
 
 ENTRYPOINT ["/entrypoint.sh"]
