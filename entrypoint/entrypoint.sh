@@ -1,14 +1,5 @@
 #!/bin/sh
-pip install flask
 
-flask --version
-
-if [ -z "$INPUT_ENTRYPOINT" ]
-then
-    file="/entrypoint.sh"
-else
-    file="/github/workspace/$INPUT_ENTRYPOINT"
-fi
 
 if [ -z "$INPUT_LOCUSTFILE" ]
 then
