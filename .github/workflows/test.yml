@@ -12,7 +12,7 @@ jobs:
         uses: apardo04/locust-github-action@requirements-test
         with:
           LOCUSTFILE: "locustfile.py"
-          REQUIREMENTS: "requirements.txt"
+          REQUIREMENTS: "test/requirements.txt"
           URL:  "https://google.com"
           USERS: "6"
           RATE: "6"
