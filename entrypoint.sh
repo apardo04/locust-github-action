@@ -7,23 +7,13 @@ then
 else
     file="/github/workspace/$INPUT_LOCUSTFILE"
 fi
-'''
-if [ -e /requirements.txt ]
+
+if [ -n "$INPUT_REQUIREMENTS" ]
 then
+    pip install -r /github/workspace/$INPUT_REQUIREMENTS
     echo "ayy In the requirements IF"
 else
-    echo "ayy NOT In the requirements IF"
+    echo "ayy No requirement file"
 fi
 
-if [ -e /github/workspace/requirements.txt ]
-then
-    echo "ayy In the github/workspace/requirements IF"
-    pip install -r /github/workspace/requirements.txt
-    # Remove: this is for testing
-    pip show Flask
-    pip show pandas
-else
-    echo "ayy NOT In the github/workspace/requirements IF"
-fi
-'''
 locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL
