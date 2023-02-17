@@ -9,10 +9,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Run Load Test
-        uses: apardo04/locust-github-action@requirements-test
+        uses: apardo04/locust-github-action@requirements-branch
         with:
           LOCUSTFILE: "locustfile.py"
-          REQUIREMENTS: "test/requirements.txt"
           URL:  "https://google.com"
           USERS: "6"
           RATE: "6"
