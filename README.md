@@ -45,7 +45,6 @@ Please see this branch as an example: https://github.com/apardo04/locust-github-
   ```
 ### Passing Github Secrets to locustfile
 Please see this branch as an example: https://github.com/apardo04/locust-github-action/tree/env-var-test
-
   1. Create a repository secret in Github.
   2. Assign it to an env variable (ex: 'GITHUB_USERNAME') in the workflows yml file: https://github.com/apardo04/locust-github-action/blob/env-var-test/.github/workflows/test.yml
   3. Reference the env variable in locustfile: https://github.com/apardo04/locust-github-action/blob/env-var-test/locustfile.py
