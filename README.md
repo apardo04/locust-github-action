@@ -36,7 +36,7 @@ jobs:
 Please see this branch as an example: https://github.com/apardo04/locust-github-action/tree/requirements-test
   1. Make sure your repo has a [requirements.txt](https://github.com/apardo04/locust-github-action/blob/requirements-test/test/requirements.txt) file.
   2. In your [workflows yml file](https://github.com/apardo04/locust-github-action/blob/requirements-test/.github/workflows/test.yml), use the REQUIREMENTS input and pass it the path to the file.
-  3. import the dependencies in your [locustfile.py](https://github.com/apardo04/locust-github-action/blob/requirements-test/locustfile.py)
+  3. Import the dependencies in your [locustfile.py](https://github.com/apardo04/locust-github-action/blob/requirements-test/locustfile.py)
 
 ### Passing Github Secrets to locustfile
 Please see this branch as an example: https://github.com/apardo04/locust-github-action/tree/env-var-test
