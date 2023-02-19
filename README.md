@@ -38,6 +38,11 @@ Please see this branch as an example: https://github.com/apardo04/locust-github-
   2. In your [workflows yml file](https://github.com/apardo04/locust-github-action/blob/requirements-test/.github/workflows/test.yml), use the REQUIREMENTS input and pass it the path to the file.
   3. Import the dependencies in your [locustfile.py](https://github.com/apardo04/locust-github-action/blob/requirements-test/locustfile.py)
 
+### Using a specific version of locust
+  1. Decalare a specific version in your requirements.txt file (See Installing 3rd party dependencies above)
+  ```yml
+  locust==2.5.1
+  ```
 ### Passing Github Secrets to locustfile
 Please see this branch as an example: https://github.com/apardo04/locust-github-action/tree/env-var-test
 

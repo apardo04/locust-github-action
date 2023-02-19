@@ -16,7 +16,5 @@ else
     pip install -r /github/workspace/$INPUT_REQUIREMENTS
 fi
 
-echo "locust version is:"
-locust -v
 # Run locust script
 locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL
