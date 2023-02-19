@@ -1,4 +1,5 @@
 from locust import HttpUser, TaskSet, task, between
+import locust
 
 print(f"Locust version: {locust.__version__}")
 
