@@ -1,5 +1,7 @@
 from locust import HttpUser, TaskSet, task, between
 
+print(f"Locust version: {locust.__version__}")
+
 class UserTasks(TaskSet):
 	@task(1)
 	def index(self):
